@@ -41,6 +41,10 @@ const CoWorkSchema = new mongoose.Schema(
 			type: String,
 			required:[true, 'Please add Close_time'],
 		},
+		picture:{
+			type: String,
+			required:[true, 'Please add a picture'],
+		}
 	},
 	{
 		toJSON: {virtuals: true},
