@@ -61,8 +61,7 @@ const server = app.listen(
 	console.log(
 		'Server running in ',
 		process.env.NODE_ENV,
-		' mode on port ',
-		'on'+process.env.HOST+':'+PORT
+		'on ' + process.env.HOST + ':' + PORT
 	)
 );
 
@@ -72,11 +71,11 @@ const swaggerOptions = {
 		info: {
 			title: 'Library API',
 			version: '1.0.0',
-			description: 'A simple Express VacQ API',
+			description: 'A simple Express Cowork API',
 		},
 		servers: [
 			{
-				url: process.env.HOST+':'+PORT+'/api/v1',
+				url: process.env.HOST + ':' + PORT + '/api/v1',
 			},
 		],
 	},
